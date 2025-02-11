@@ -6,13 +6,13 @@ class mainwin(QtWidgets.QMainWindow):
         super(mainwin, self).__init__()
         self.ui=Ui_MainWindow()
         self.ui.setupUi(self)
-        self.Number_Of_Clicks=0
+        self.num_of_clicks=0
         self.ui.pushButton_click.pressed.connect(self.update_clicks)
         self.show()
 
     def update_clicks(self):
-        self.Number_Of_Clicks+=1
-        self.ui.click_count_label.setText(f"Number Of Clicks {self.Number_Of_Clicks}")
+        self.num_of_clicks+=1
+        self.ui.click_count_label.setText(f"Number Of Clicks {self.num_of_clicks}")
 
 
 if __name__=="__main__":

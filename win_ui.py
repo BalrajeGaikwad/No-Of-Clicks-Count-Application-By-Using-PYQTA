@@ -47,7 +47,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton_click.setText(_translate("MainWindow", "Click Me"))
-        self.click_count_label.setText(_translate("MainWindow", "Number Of Clicks :-  "))
+        self.click_count_label.setText(_translate("MainWindow", "Number Of Clicks :- 0 "))
 
 
 if __name__ == "__main__":
